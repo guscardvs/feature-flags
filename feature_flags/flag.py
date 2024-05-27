@@ -22,7 +22,7 @@ class FlagGroup:
         if isinstance(flag, Flag):
             return flag in self.flags
         if isinstance(flag, str):
-            return any(flag.name == flag for flag in self.flags)
+            return any(item.name == flag for item in self.flags)
         return NotImplemented
 
     def get_or_create(self, name: str, default: bool) -> Flag:

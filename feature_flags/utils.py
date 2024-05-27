@@ -1,5 +1,5 @@
 from collections.abc import Callable
-from typing import Any, Generic, ParamSpec, Self, TypeVar
+from typing import Any, Generic, ParamSpec, Self, TypeVar, cast
 
 from gyver.attrs import define
 from lazyfields import lazyfield
@@ -99,13 +99,24 @@ class Singleton:
     @classmethod
     def _revert_init(cls):
         """Revert the __init__ method to the original initializer."""
-        cls.__init__ = cls.__old_init__
+        if hasattr(cls, '__old_init__'):
+            cls.__init__ = cls.__old_init__
 
     @classmethod
     def singleton_clear(cls):
         """Clear the singleton instance and revert the __init__ method."""
         cls._instance = None
         cls._revert_init()
+
+    @classmethod
+    def singleton_ensure_new(
+        cls: Callable[P, T], *args: P.args, **kwargs: P.kwargs
+    ) -> T:
+        klass = cast(type[T], cls)
+        self = object.__new__(klass)
+        init = getattr(klass, '__old_init__', klass.__init__)
+        init(self, *args, **kwargs)
+        return self
 
 
 class Defer(Generic[P, T]):

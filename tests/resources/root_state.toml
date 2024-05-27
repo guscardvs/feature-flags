@@ -1,0 +1,2 @@
+[tool.feature-flags]
+example_flag = true

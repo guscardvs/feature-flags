@@ -26,7 +26,10 @@ class FlagEntry(Base):
 
 
 class SQLAlchemyStore(Store, Singleton):
-    def __init__(self, db_uri: str = 'sqlite:///flags.db'):
+    def __init__(
+        self,
+        db_uri: str = 'sqlite:///flags.db',
+    ):
         engine = create_engine(db_uri)
         Base.metadata.create_all(engine)
         self.session_factory = sessionmaker(bind=engine)

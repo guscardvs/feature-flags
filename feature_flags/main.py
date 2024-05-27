@@ -10,3 +10,8 @@ def initialize(loader: Loader | None = None, store: Store | None = None):
         loader = StoreLoader(store)
     loader = ProxyLoader(loader)
     initialize_store(loader, store)
+
+
+def reset():
+    ProxyLoader.singleton_clear()
+    ProxyStore.singleton_clear()

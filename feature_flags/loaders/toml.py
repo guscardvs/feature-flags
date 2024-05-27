@@ -12,7 +12,7 @@ class TomlLoader(Loader):
         filename: str | Path = 'pyproject.toml',
         table: str = 'tool.feature-flags',
     ):
-        self.filename = filename
+        self.filename = Path(filename)
         self.table = table
 
     @lazyfield

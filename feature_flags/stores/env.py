@@ -3,6 +3,8 @@ from collections.abc import Callable, Sequence
 from config import Config, boolean_cast
 from config.interface import ConfigLike
 
+from feature_flags.utils import Singleton
+
 from .proxy import _default_store
 from .store import Store
 
@@ -11,7 +13,7 @@ def from_kebab(string: str) -> str:
     return '_'.join(string.split('-'))
 
 
-class EnvironmentStore(Store):
+class EnvironmentStore(Store, Singleton):
     def __init__(
         self,
         config: ConfigLike = Config(),

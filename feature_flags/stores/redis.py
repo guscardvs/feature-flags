@@ -30,13 +30,13 @@ class RedisStore(Store, Singleton):
 
     def save(self, flag: Flag, value: Value) -> None:
         """Save a flag in the Redis store backend with the value received"""
-        self._redis.set(flag, value)
+        self._redis.set(flag, int(value))
 
     def save_bulk(self, flags: dict[Flag, Value]) -> None:
         """Save all flags passed from the parameter."""
         pipe = self._redis.pipeline()
         for flag, value in flags.items():
-            pipe.set(flag, value)
+            pipe.set(flag, int(value))
         pipe.execute()
 
     def get(self, flag: Flag) -> Value | None:

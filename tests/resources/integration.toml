@@ -1,0 +1,4 @@
+[tool.feature-flags]
+feature1 = true
+feature2 = true
+feature3 = false

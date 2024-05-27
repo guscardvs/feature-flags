@@ -28,6 +28,10 @@ distribution = true
 
 [tool.pdm.dev-dependencies]
 linter = ["ruff>=0.4.5"]
+tests = [
+    "pytest>=8.2.1",
+    "fakeredis>=2.23.2",
+]
 
 [tool.ruff]
 line-length = 79
@@ -39,3 +43,8 @@ extend-select = ['I', 'PL', 'UP']
 quote-style = 'single'
 docstring-code-format = true
 docstring-code-line-length = 79
+
+[tool.pytest_ini]
+addopts = [
+    '-sv'
+]
