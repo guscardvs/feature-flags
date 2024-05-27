@@ -1,4 +1,4 @@
-.PHONY: format
+.PHONY: format test
 
 BIN := ./.venv/bin
 
