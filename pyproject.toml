@@ -1,5 +1,5 @@
 [project]
-name = "feature-flags"
+name = "code-flags"
 version = "0.1.0"
 description = "Default template for PDM package"
 authors = [{ name = "Gustavo Cardoso", email = "self.gustavocorrea@gmail.com" }]
@@ -43,7 +43,7 @@ docstring-code-line-length = 79
 [tool.pytest.ini_options]
 addopts = [
     '-sv',
-    "--cov=feature_flags/",
+    "--cov=code_flags/",
     "--cov-report=html",
     "--cov-config=.coveragerc",
     "--no-cov-on-fail",

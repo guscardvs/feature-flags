@@ -1,4 +1,4 @@
-from feature_flags.utils import Singleton, defer
+from code_flags.utils import Singleton, defer
 
 from .sqlite import SQLiteStore
 from .store import Flag, Store, Value

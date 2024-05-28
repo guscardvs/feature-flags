@@ -1,6 +1,6 @@
 import pytest
 
-from feature_flags.stores.sqlalchemy import SQLAlchemyStore
+from code_flags.stores.sqlalchemy import SQLAlchemyStore
 
 # Create an in-memory SQLite database for testing
 TEST_DB_URI = 'sqlite:///:memory:'

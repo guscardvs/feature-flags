@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from feature_flags.stores.sqlite import SQLiteStore
+from code_flags.stores.sqlite import SQLiteStore
 
 
 @pytest.fixture

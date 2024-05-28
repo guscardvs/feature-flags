@@ -1,4 +1,4 @@
-from feature_flags.stores.store import Store
+from code_flags.stores.store import Store
 
 from .loader import Flag, Loader, Value
 

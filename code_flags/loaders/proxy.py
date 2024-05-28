@@ -1,4 +1,4 @@
-from feature_flags.utils import Singleton
+from code_flags.utils import Singleton
 
 from .loader import Flag, Loader, Value
 

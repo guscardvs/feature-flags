@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from feature_flags.loaders.toml import TomlLoader
+from code_flags.loaders.toml import TomlLoader
 
 RESOURCES_DIR = Path(__file__).parent.parent / 'resources'
 

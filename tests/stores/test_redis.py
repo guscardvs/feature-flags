@@ -3,7 +3,7 @@ from unittest.mock import patch
 import fakeredis
 import pytest
 
-from feature_flags.stores.redis import RedisConfig, RedisStore
+from code_flags.stores.redis import RedisConfig, RedisStore
 
 
 @pytest.fixture

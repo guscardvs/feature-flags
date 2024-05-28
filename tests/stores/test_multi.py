@@ -2,7 +2,7 @@ from unittest.mock import MagicMock, call
 
 import pytest
 
-from feature_flags.stores.multi import MultiStore
+from code_flags.stores.multi import MultiStore
 
 
 @pytest.fixture

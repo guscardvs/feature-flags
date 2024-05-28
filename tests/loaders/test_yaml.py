@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from feature_flags.loaders.yaml import YamlLoader
+from code_flags.loaders.yaml import YamlLoader
 
 RESOURCES_DIR = Path(__file__).parent.parent / 'resources'
 

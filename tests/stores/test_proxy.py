@@ -1,7 +1,7 @@
 import pytest
 
-from feature_flags.stores.in_memory import InMemoryStore
-from feature_flags.stores.proxy import ProxyStore
+from code_flags.stores.in_memory import InMemoryStore
+from code_flags.stores.proxy import ProxyStore
 
 
 @pytest.fixture

@@ -1,6 +1,6 @@
 import pytest
 
-from feature_flags.flag import Flag, FlagGroup
+from code_flags.flag import Flag, FlagGroup
 
 
 @pytest.fixture

@@ -1,7 +1,7 @@
-from feature_flags.loaders.null import NullLoader
-from feature_flags.loaders.proxy import ProxyLoader
-from feature_flags.stores import Store
-from feature_flags.utils import defer
+from code_flags.loaders.null import NullLoader
+from code_flags.loaders.proxy import ProxyLoader
+from code_flags.stores import Store
+from code_flags.utils import defer
 
 from .loader import Loader
 

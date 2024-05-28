@@ -2,7 +2,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from feature_flags.loaders.store import StoreLoader
+from code_flags.loaders.store import StoreLoader
 
 
 @pytest.fixture

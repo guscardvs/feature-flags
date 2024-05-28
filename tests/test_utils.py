@@ -1,6 +1,6 @@
 from unittest.mock import MagicMock
 
-from feature_flags.utils import Defer, Singleton, defer, package_attrs
+from code_flags.utils import Defer, Singleton, defer, package_attrs
 
 
 def test_package_attrs():

@@ -3,7 +3,7 @@ from collections.abc import Callable, Sequence
 from config import Config, boolean_cast
 from config.interface import ConfigLike
 
-from feature_flags.utils import Singleton
+from code_flags.utils import Singleton
 
 from .proxy import _default_store
 from .store import Store

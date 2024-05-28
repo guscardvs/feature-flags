@@ -2,8 +2,8 @@ from pathlib import Path
 
 import pytest
 
-from feature_flags.loaders.json import JsonLoader
-from feature_flags.loaders.proxy import ProxyLoader
+from code_flags.loaders.json import JsonLoader
+from code_flags.loaders.proxy import ProxyLoader
 
 RESOURCES_DIR = Path(__file__).parent.parent / 'resources'
 

@@ -8,7 +8,7 @@ from sqlalchemy.orm import (
     sessionmaker,
 )
 
-from feature_flags.utils import Singleton
+from code_flags.utils import Singleton
 
 from .store import Store
 

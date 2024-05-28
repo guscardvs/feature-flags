@@ -2,9 +2,9 @@ from collections.abc import Callable, Coroutine
 from functools import wraps
 from typing import Any, ParamSpec, TypeAlias, TypeVar
 
-from feature_flags.flag import FlagGroup
-from feature_flags.stores import get_store
-from feature_flags.utils import package_attrs
+from code_flags.flag import FlagGroup
+from code_flags.stores import get_store
+from code_flags.utils import package_attrs
 
 flag_state_attr = package_attrs[FlagGroup]('flag_name')
 

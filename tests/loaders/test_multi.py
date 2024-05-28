@@ -2,7 +2,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from feature_flags.loaders.multi import MultiLoader
+from code_flags.loaders.multi import MultiLoader
 
 
 @pytest.fixture

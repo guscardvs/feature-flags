@@ -1,6 +1,6 @@
 import pytest
 
-from feature_flags.stores.env import EnvironmentStore
+from code_flags.stores.env import EnvironmentStore
 
 
 @pytest.fixture

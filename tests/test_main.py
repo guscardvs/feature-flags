@@ -2,10 +2,10 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from feature_flags.loaders import ProxyLoader
-from feature_flags.main import initialize
-from feature_flags.stores import ProxyStore, get_store
-from feature_flags.stores.sqlite import SQLiteStore
+from code_flags.loaders import ProxyLoader
+from code_flags.main import initialize
+from code_flags.stores import ProxyStore, get_store
+from code_flags.stores.sqlite import SQLiteStore
 
 
 @pytest.fixture

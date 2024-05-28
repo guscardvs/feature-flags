@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from feature_flags.loaders.json import JsonLoader
+from code_flags.loaders.json import JsonLoader
 
 RESOURCES_DIR = Path(__file__).parent.parent / 'resources'
 

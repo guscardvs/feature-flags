@@ -2,7 +2,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from feature_flags.mark import (
+from code_flags.mark import (
     FlagGroup,
     flag,
     flag_state_attr,

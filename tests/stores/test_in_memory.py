@@ -1,6 +1,6 @@
 import pytest
 
-from feature_flags.stores.in_memory import InMemoryStore
+from code_flags.stores.in_memory import InMemoryStore
 
 
 @pytest.fixture

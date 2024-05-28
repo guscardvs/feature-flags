@@ -3,11 +3,11 @@ from pathlib import Path
 
 import pytest
 
-from feature_flags.loaders.toml import TomlLoader
-from feature_flags.main import initialize, reset
-from feature_flags.mark import async_flag, flag
-from feature_flags.stores.sqlalchemy import SQLAlchemyStore
-from feature_flags.stores.sqlite import SQLiteStore
+from code_flags.loaders.toml import TomlLoader
+from code_flags.main import initialize, reset
+from code_flags.mark import async_flag, flag
+from code_flags.stores.sqlalchemy import SQLAlchemyStore
+from code_flags.stores.sqlite import SQLiteStore
 
 RESOURCES_DIR = Path(__file__).parent / 'resources'
 
