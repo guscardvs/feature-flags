@@ -1,8 +1,9 @@
 from collections.abc import Callable
-from typing import Any, Generic, ParamSpec, Self, TypeVar, cast
+from typing import Any, Generic, ParamSpec, TypeVar, cast
 
 from gyver.attrs import define
 from lazyfields import lazyfield
+from typing_extensions import Self
 
 P = ParamSpec('P')
 T = TypeVar('T')

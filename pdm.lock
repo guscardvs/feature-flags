@@ -5,7 +5,7 @@
 groups = ["default", "linter", "stores", "tomlkit", "toml", "yaml", "env", "tests"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:efce537e0a058d146d6121f357b359e19f81c9f9ce0148fcdd83211ed18496c3"
+content_hash = "sha256:6a989e69c4bb2f99871f012cc5cf40c64d2593f5542760b149b362323476733b"
 
 [[package]]
 name = "async-timeout"
